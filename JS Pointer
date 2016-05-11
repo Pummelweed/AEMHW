@@ -1,0 +1,26 @@
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
+  background(178);
+  fill(220,50,198);
+  rect(mouseX,mouseY,10,10);
+  rect(mouseX+10,mouseY+10,10,10);
+    rect(mouseX+20,mouseY+20,10,10);
+  fill(255);
+  rect(mouseX-10,mouseY-10,10,10);
+  rect(mouseX-10,mouseY,10,10);
+  rect(mouseX,mouseY-10,10,10);
+  rect(mouseX+10,mouseY-10,10,10);
+  rect(mouseX-10,mouseY+10,10,10);
+  
+   if (mouseIsPressed) {
+      if(mouseButton == LEFT)
+      ellipse(mouseX-7,mouseY+15, 20,20);
+      if(mouseButton == RIGHT)
+      ellipse(mouseX+15,mouseY-7,20,20);
+      if(mouseButton == CENTER)
+      ellipse(mouseX-7,mouseY-7,20,20);
+  }
+}
